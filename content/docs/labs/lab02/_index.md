@@ -16,7 +16,7 @@ title: 'Lab02 前后端基础Ⅰ'
 
 ## 资源链接
 
-<a href="https://bhpan.buaa.edu.cn:443/link/7FC97D4914FAF0823CCA406586229890 " target="_blank">https://bhpan.buaa.edu.cn:443/link/7FC97D4914FAF0823CCA406586229890</a>
+<a href="https://bhpan.buaa.edu.cn:443/link/670A1C21946A1448827E2CF57FA87F22" target="_blank">https://bhpan.buaa.edu.cn:443/link/670A1C21946A1448827E2CF57FA87F22 </a>
 
 有效期限：2022-08-01 23:59
 
