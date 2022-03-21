@@ -33,7 +33,7 @@ title: 'Lab02 前后端基础Ⅰ'
 
 ### 任务1
 
-资源中的homework文件夹给出了给出了一个模仿百度主页的网页（index.html），可是这个网页缺少了 CSS 和 JS 文件，你需要把附件文件夹中的 CSS 和 JS 代码引入到网页中
+资源中的homework文件夹给出了一个模仿百度主页的网页（index.html），可是这个网页缺少了 CSS 和 JS 文件，你需要把附件文件夹中的 CSS 和 JS 代码引入到网页中
 
 <span style="color: red">完成该环节的之后的网页截图</span>
 
