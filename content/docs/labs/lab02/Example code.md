@@ -1,6 +1,6 @@
 ---
-title: '示例代码'
-weight: 1001
+title: '前端示例代码'
+weight: 2002
 ---
 
 # HTML 入门
