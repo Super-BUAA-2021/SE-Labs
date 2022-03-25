@@ -70,7 +70,7 @@ weight: 2001
 
 点击登录按钮后，似乎用户已经正确地登录，但是页面似乎发生了一些错误。请尝试修改 initUserInfo 函数，使得用户登录后，页面显示依然正常。（使用审查元素分析网页变化）
 
-<span style="color: red">控制台报错截图</span>
+<span style="color: red">点击后审查页面变化截图</span>
 
 <span style="color: red">修复后登录截图</span>
 
