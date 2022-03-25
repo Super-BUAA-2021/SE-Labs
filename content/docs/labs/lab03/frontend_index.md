@@ -27,62 +27,55 @@ weight: 2001
 
 ## 实验作业
 
-根据`作业.pdf`中的作业要求完成作业，并提交到云平台上
+根据`作业.pdf`中的作业要求完成作业，并将**文档**和**演示视频**打包提交到云平台上。
 
 ### 任务 1
 
-使用 Vue CLI 创建一个自己的 Vue 项目，项目至少包含 Vue-Router 和 Vuex，其他依赖项可以自行决定要不要添加
+使用 Vue CLI 创建一个自己的 Vue 项目，项目至少包含 Vue-Router 和 Vuex，其他依赖项可以自行决定要不要添加。
 
 ### 任务 2
 
-- 在 views 中新建一个单页面组件，将其命名为`Login.vue`
-- 注册路径为`/login`的路由(在`router/index.js`中)，并将`Login.vue`挂载到该路由下
-- 在 // TODO
+在 views 中新建一个单页面组件，将其命名为`Login.vue`。注册路径为`/login`的路由(修改`router/index.js`)，并将`Login.vue`挂载到该路由下。在首页加入该页面的入口(如下图所示)。
+
+![状态图1](/SE-Labs/images/lab3/状态图1.png)
+
+<span style="color: red">router/index.js 的代码截图</span>
 
 ### 任务 3
 
-修改 index.html，使**热榜**部分其尽可能与下方相似（温馨提示，请不要偷懒直接插一张截图进去，我们会看代码的），相关的图片放在了 img 文件下，其中把“《你的学号》”换成你真实的学号（例如 20370000），如有必要可以注释原有的代码，但不要删除，因为后续的任务还会用到
+在 `store/index.js` 中注册名为 `isLogin` 的状态(初始为 false 即未登录)，用于判断用户是否登录。对该状态增加两个 mutation，名为 login 和 logout，分别用于登录和登出。
 
-![image-20220321085947597](/SE-Labs/images/lab2/image-20220321085947597.png)
-
-<span style="color: red">修改完的网页截图</span>
+<span style="color: red">store/index.js 的代码截图</span>
 
 ### 任务 4
 
-修改 index.js，使得在点击 ID 为 top-right 的元素之后，会调用 clickLogin 函数
+在 Home 页面使用条件渲染，如果登录则显示下面状态 1，否则显示状态 2。在状态 2 时，点击上下的 login 都应该可以跳转。
 
-<span style="color: red">点击前的截图</span>
+{{< tabs "vue-home" >}}
+{{< tab "状态1" >}} ![状态图1](/SE-Labs/images/lab3/状态图1.png) {{< /tab >}}
+{{< tab "状态2" >}} ![状态图2](/SE-Labs/images/lab3/状态图2.png) {{< /tab >}}
+{{< /tabs >}}
 
-<span style="color: red">点击后的截图</span>
+<span style="color: red">Home 组件的代码截图</span>
 
 ### 任务 5
 
-点击登录按钮后，似乎用户已经正确地登录，但是页面似乎发生了一些错误。请尝试修改 initUserInfo 函数，使得用户登录后，页面显示依然正常。（使用审查元素分析网页变化）
+Login 组件中的按钮应该使用 ElementUI 的按钮，在未登录时显示状态 1，在登录时显示状态 2。
 
-<span style="color: red">点击后审查页面变化截图</span>
+{{< hint info >}}
+登录按钮和未登录按钮展示需要使用 v-if 条件渲染，两者各绑定一个事件，分别对应触发 vuex 的 mutation（login 和 logout）。
+{{< /hint >}}
 
-<span style="color: red">修复后登录截图</span>
+{{< tabs "vue-login" >}}
+{{< tab "状态1" >}} ![状态图1](/SE-Labs/images/lab3/状态图3.png) {{< /tab >}}
+{{< tab "状态2" >}} ![状态图2](/SE-Labs/images/lab3/状态图4.png) {{< /tab >}}
+{{< /tabs >}}
 
-### 任务 6
-
-将你的代码提交至远程仓库，github 或者 gitee 均可（至少保留 1 周），并在实验文档中说明
-
-### 附加任务（非强制）
-
-这部分建议学有余力的同学看一看，可能需要你**额外**学习一些前端知识
-
-- 在任务 2 的基础上，使用户在搜索框按下回车的时候也可以进行搜索，并且会跳转到百度对应的搜索页面（处理键盘事件，链接外部页面）
-
-- 在任务 3 的基础上加上醒目的大图，尽可能与下图相似（处理相对位置，没有思路可以去百度榜单 F12 看看他是怎么写的）
-
-  ![image-20220321090301004](/SE-Labs/images/lab2/image-20220321090301004.png)
-  {{< hint info >}}
-  里面最显眼的那张图片并**不是**一个正方形哦，是一个圆角矩形，而且你可以发现我们所提供的原图是**没有左上角的 1 标志**，请思考如何引入
-  {{< /hint >}}
+<span style="color: red">Login 组件的代码截图</span>
 
 ## 实验报告
 
-按照要求完成实验文档，简要阐明你的思路
+按照要求完成实验文档和演示视频，可以简要阐明你的思路
 
 ## 提交方式
 
