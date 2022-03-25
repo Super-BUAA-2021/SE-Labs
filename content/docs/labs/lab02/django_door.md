@@ -205,6 +205,8 @@ python manage.py makemigrations # 生成迁移文件
 python manage.py migrate        # 迁移数据库模型
 ```
 
+> 输入上述命令迁移后运行，可以发现在项目根目录出现了 `db.sqlite3` 文件。这是一个数据库文件，如何可视化请见后面[sqlite 数据库可视化](/SE-Labs/docs/labs/lab02/django_door/#sqlite-数据库可视化)，你也可以先看可视化部分再回头。
+
 {{< details title="数据库模型指令介绍" >}}
 
 #### Django 的 Model 数据类型
@@ -422,6 +424,22 @@ urlpatterns = [
 ]
 ```
 
+## sqlite 数据库可视化
+
+这里只展示 Pycharm 如何可视化 `db.sqlite3` 文件。
+
+在 Pycharm 右侧侧边栏处，点击 Database 按钮，添加 Data Source：
+
+![sqlite1](/SE-Labs/images/lab2/sqlite1.png)
+
+在弹出的选项框中，选择项目根目录的 sqlite3 文件；若提示缺失驱动，点击下载并测试连接，成功后点击确认即可：
+
+![sqlite2](/SE-Labs/images/lab2/sqlite2.png)
+
+若未显示数据库，请按下图操作：
+
+![sqlite3](/SE-Labs/images/lab2/sqlite3.png)
+
 ## Postman 测试
 
 前后端分离开发中，仅后端一般无法通过点击图形化界面进行测试，后端的测试也不应该依赖于前端，而应该独立进行。因此后端的测试，需要借助工具模拟前端请求，向后端相应的路由发送请求，并查看响应数据。
@@ -437,3 +455,11 @@ Postman 下载地址：<a href="https://www.postman.com/" target="_blank">https:
 ![postman](/SE-Labs/images/lab2/postman.png)
 
 可以看到返回数据是 JSON 格式，且提示注册成功。
+
+## 简单的调试方法
+
+对后端来说，如果使用 Postman 发送请求后结果和预料的正常结果不一致，但这时候我们只知道哪个函数出错了，难以缩小 bug 的范围并找出原因。
+
+这里提供一个非常简单的小技巧，可以在 Python 出错的函数中，加上一些 `print` 输出，然后用 Postman 再次发请求，你可以在跑后端的终端中查看到你 print 的信息。
+
+举个非常简单的例子，现在我查询文章列表出 bug 了，我想判断有没有进入循环，就可以在 `for` 循环内加入 `print(1)`，然后用 Postman 再发一次请求，就能在跑后端的终端中看是否有 `1` 输出，没有则未进入循环。（万能的 `print` 法找 bug）
