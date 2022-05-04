@@ -13,4 +13,4 @@ Github Actions Jenkins Circle CI Gitlab CI Bitbucket Pipelines Azure DevOps 当�
 如果你是你们小组部署网站的成员，且已经部署好了项目，仅需在报告中展示一些重要的服务器配置文件截图，并结合简要的文字说明，最后附上可访问的网站链接。
 本次部署作业，要求在自己的服务器或者云平台提供的虚拟机上，完成部署前端或后端任务，感兴趣的同学也可以尝试部署完整的 Web 项目。部署的项目可以使用提供的 frontend_demo 和 backend_demo，也可以使用大作业项目。
 实验报告命名要求：前端部署报告.pdf 或者 后端部署报告.pdf 或者 前后端部署报告.pdf
-部署前端 # 在服务器或虚拟机上部署前端项目，不要求能与后端正常交互（能实现当然更好）。</description></item></channel></rss>
+部署前端 # 在服务器或虚拟机上部署前端项目，不要求能与后端正常交互（能实现当然更好）。要求部署的前端页面中含有自己的学号和姓名标识。</description></item></channel></rss>
