@@ -6,4 +6,11 @@ CI/CD 就是将这些过程自动化的工具或者服务，请阅读这一篇 �
 持续集成：自动化地进行软件构建(Build)、测试(Test)、代码合并(Merge) 持续交付：自动化地进行软件代码的发布(Release)，发布的代码可以稳定地在生产环境中使用 持续部署：自动化地进行软件的部署(Deploy)，将代码库中的代码实际部署到生产环境中 常用的 CI/CD 工具 # CI/CD 的工具可以说是数不胜数，有无数种方案可以实现 CI/CD 的工作流。
 根据项目的不同，选择的 CI/CD 工具很可能会不一样，这里简单地列出一些 CI/CD 工具：
 Github Actions Jenkins Circle CI Gitlab CI Bitbucket Pipelines Azure DevOps 当需要用到这些工具的时候，再去查阅相关的官方文档就可以了，软件开发不就是看文档写文档嘛，有什么难的（bushi
-大作业 CI/CD 推荐方案 # 虽然大作业不强制要求部署到云服务器上，但是我们建议每个小组都购买一台云服务器，并且实现在云服务器上部署你们的网站。一些云服务器可以按小时计费，最基础的云服务器包年大概在100 元左右(学生价)。 我们推荐在 Github 上实现大作业前后端的 CI/CD，前后端各自一个仓库，两个仓库采用各自的 CI/CD 工作流。在向仓库的 main 分支 push 之后，利用 Github Actions 自动化地实现前后端项目在云服务器上的自动部署。</description></item><item><title>前后端项目部署</title><link>https://Super-BUAA-2021.github.io/SE-Labs/docs/labs/lab07/deployment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Super-BUAA-2021.github.io/SE-Labs/docs/labs/lab07/deployment/</guid><description>Lab07 前后端项目部署 # 服务器基础配置 # 前端部署流程 # 后端部署流程 # 实验作业 #</description></item></channel></rss>
+大作业 CI/CD 推荐方案 # 虽然大作业不强制要求部署到云服务器上，但是我们建议每个小组都购买一台云服务器，并且实现在云服务器上部署你们的网站。一些云服务器可以按小时计费，最基础的云服务器包年大概在100 元左右(学生价)。 我们推荐在 Github 上实现大作业前后端的 CI/CD，前后端各自一个仓库，两个仓库采用各自的 CI/CD 工作流。在向仓库的 main 分支 push 之后，利用 Github Actions 自动化地实现前后端项目在云服务器上的自动部署。</description></item><item><title>前后端项目部署</title><link>https://Super-BUAA-2021.github.io/SE-Labs/docs/labs/lab07/deployment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Super-BUAA-2021.github.io/SE-Labs/docs/labs/lab07/deployment/</guid><description>Lab07 前后端项目部署 # 实验指南 # 结合所给的PPT（服务器部署Vue和Django项目.pptx），观看服务器部署视频教程（建议1.5倍速观看，广普口音敬请谅解）。
+视频包含完整的服务器部署过程，前端的同学可根据PPT上的视频时间节点信息选择跳过某些片段，当然也可以尝试理解理解，或者略看一下。
+具体流程 # 服务器预设置（SSH远程连接、添加用户、配置公钥） 安装远程数据库（可选） 安装Django环境（MiniConda） 配置uWSGI 配置Nginx 资源汇总 # 部署全流程：https://blog.zewan.cc/2021/06/24/deploy-django-vue/ 安装远程数据库：https://blog.zewan.cc/2022/05/02/server-mysql/ Tmux 教程：https://www.ruanyifeng.com/blog/2019/10/tmux.html Miniconda安装教程：https://os.51cto.com/article/636125.html 注意事项 # 如果需要在本地运行我提供的 frontend_demo，请记得先 npm install 安装依赖 提供的 demo 采用 vue2 + Django v3.2 版本 切莫攻击或删除提供的服务器和数据库（我很相信super2021） 本实验中用于教学的服务器不久后将刷机
+实验作业 # 本次部署作业为个人作业，非小组作业，要求每人提交一份实验报告。
+如果你是你们小组部署网站的成员，且已经部署好了项目，仅需在报告中展示一些重要的服务器配置文件截图，并结合简要的文字说明，最后附上可访问的网站链接。
+本次部署作业，要求在自己的服务器或者云平台提供的虚拟机上，完成部署前端或后端任务，感兴趣的同学也可以尝试部署完整的 Web 项目。部署的项目可以使用提供的 frontend_demo 和 backend_demo，也可以使用大作业项目。
+实验报告命名要求：前端部署报告.pdf 或者 后端部署报告.pdf 或者 前后端部署报告.pdf
+部署前端 # 在服务器或虚拟机上部署前端项目，不要求能与后端正常交互（能实现当然更好）。</description></item></channel></rss>
