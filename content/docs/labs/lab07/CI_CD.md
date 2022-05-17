@@ -46,7 +46,7 @@ CI/CD 的工具可以说是**数不胜数**，有无数种方案可以实现 CI/
 
 我们推荐在 **Github** 上实现大作业前后端的 CI/CD，前后端各自一个仓库，两个仓库采用各自的 CI/CD 工作流。在向仓库的 main 分支 push 之后，利用 Github Actions 自动化地实现前后端项目在云服务器上的自动部署。
 
-关于 Github Actions 的简单介绍，可以看看[这篇博客](https://blog.matrix53.top/2021/07/25/Github%E6%8E%A2%E7%A7%98/)。
+关于 Github Actions 的简单介绍，可以看看[这篇博客](https://matrix53.github.io/2021/07/25/Github%E6%8E%A2%E7%A7%98/)。
 
 ## 实验作业
 
@@ -152,7 +152,7 @@ draft: false
 
 ### 启用 Github Pages
 
-关于 Github Pages，这里有一篇[博客](https://blog.matrix53.top/2021/07/25/Github%E6%8E%A2%E7%A7%98/)可以作为简单的参考
+关于 Github Pages，这里有一篇[博客](https://matrix53.github.io/2021/07/25/Github%E6%8E%A2%E7%A7%98/)可以作为简单的参考
 
 #### 创建个人博客仓库
 
